@@ -6,7 +6,7 @@ import Card from './Card'
 function GameBoard() {
   return (
     <div>
-      <h3>Games</h3>
+      <h3>React</h3>
       <p>Game Board</p>
       <div className="board">
         <div className="card">?</div>

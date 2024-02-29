@@ -1,5 +1,3 @@
-import data from '../../data/games'
-
 import { Link } from 'react-router-dom'
 
 function Nav() {
@@ -7,11 +5,12 @@ function Nav() {
     <div>
       <h3>Games</h3>
       <ul>
-        {Object.keys(data).map((game) => (
-          <li key={game}>
-            <Link to={`/game/${game}`}>{game}</Link>
-          </li>
-        ))}
+        <li key="React">
+          <Link to="/">Home</Link>
+        </li>
+        <li key="React">
+          <Link to="/game">React</Link>
+        </li>
       </ul>
     </div>
   )

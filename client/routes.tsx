@@ -6,6 +6,6 @@ import GameBoard from './components/GameBoard'
 export const routes = createRoutesFromElements(
   <Route path="/" element={<App />}>
     <Route index element={<Home />} />
-    <Route path="/game/:name" element={<GameBoard />} />
+    <Route path="/game" element={<GameBoard />} />
   </Route>
 )
