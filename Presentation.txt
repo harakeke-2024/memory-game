@@ -1,0 +1,81 @@
+Intro:
+
+This is a memory game, where an user will see a board with cards and need to match the pairs. This game goal is to help stdents to fix some concepts related to the Dev Academy course.
+
+
+Demo:
+a demo of the app, show us all the cool things you built!
+
+User Stories
+As an user I want to start to play the game
+As an user I want to click in a card and see the content
+As an user I want to know if a card matchs with a previous card
+As an user I want to flip back the two last cards when they doen't match
+As an user I want to know when the game finished 
+As an user I want to be able to start again the game
+
+Strech
+As an user I want to see the game options to select which one I want to play
+As an user I want to say my name to see it when I win
+
+  
+
+Planning:
+How did you come up with the idea?
+We wanted to build something which uses the skills we learned duting the week like the pixel and pupkin challenges.
+
+
+What was your MVP?
+
+A memory game for a single user
+- with only 6 positons
+- with the cards always at the same position
+
+Backlog:
+- make the card positions ramdomic
+- add a for to get and show the game player when they win
+- make the game options dinamic to allow more then one game
+- make the board size dinamic to allow games with different sizes
+
+
+What planning did you do?
+
+Yesterday: 
+We decided what to build after a brainstorm (shopping list, blog, memory game)
+We define as a homework take a look about some memory board implementations
+We created the initial repository from the template
+
+Roles:
+What roles did you each have?
+
+
+
+What did you work on?
+
+
+Wellbeing:
+What was your wellbing plan and did you use it?
+
+
+How did you agree to work together?
+
+Stretch:
+What were your stretch goals?
+Build the backlog and also refact the mvp mabe creating new components or cleaning out the code
+
+Did you get to any of those stretch goals?
+no
+
+Challenges:
+What challenges did you face?
+- How to approach the work because we have different styles of work and thinking
+- How to code without knowing what's is the best approach to take
+
+How did you overcome the challenges?
+Have a chat as a team after talking with the facilitators
+
+Learnings:
+What did you learn? (both tech and human skills)
+
+
+What learnings will you take into future projects?
