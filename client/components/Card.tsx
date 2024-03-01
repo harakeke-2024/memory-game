@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 
 interface Props {
   val: string
+  handleClick: (val: string) => void
 }
 
 console.log(initialState)
@@ -14,11 +15,6 @@ function Card(props: Props) {
   const [firstCard, setFirstCard] = useState('')
 
   function handleClick(val: string) {
-    // const checkCard: Card = number.find((ele) => ele.id == id)
-    // const ourCard = number.indexOf(checkCard)
-    // checkCard.bool = true
-    // setNumber(number.splice(ourCard, 1, checkCard))
-    // console.log(number)
     setColor('white')
     console.log(color)
     if (firstCard.length == 0) {
