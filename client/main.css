@@ -40,5 +40,7 @@
 button {
   margin-bottom: 50px;
   margin-left: 25px;
-  height: 300px;
+  height: 200px;
+  width: 200px;
+  font-size: 30pt;
 }
