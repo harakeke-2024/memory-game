@@ -1,4 +1,4 @@
-import data from '../../data/games'
+import data from '../../data/Logic.ts'
 
 import { Link } from 'react-router-dom'
 import Card from './Card'
