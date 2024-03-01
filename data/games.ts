@@ -16,10 +16,6 @@ const data: GameData = {
       { text: 'Boundaries' },
       { text: 'Reliability ' },
       { text: 'Accountability ' },
-      { text: 'Vault' },
-      { text: 'Integrity' },
-      { text: 'Non Judgement' },
-      { text: 'Generosity ' },
     ],
   },
   Human: {

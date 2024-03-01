@@ -2,11 +2,6 @@ import { useState } from 'react'
 import data from '../../data/games'
 import initialState from '../../data/gameLogic.ts'
 import { Link } from 'react-router-dom'
-interface singleCard {
-  val: string
-  bool: boolean
-  id: string
-}
 
 interface Props {
   val: string
@@ -15,8 +10,8 @@ interface Props {
 console.log(initialState)
 
 function Card(props: Props) {
-  const [number, setNumber] = useState(initialState)
   const [color, setColor] = useState('black')
+  const [firstCard, setFirstCard] = useState('')
 
   function handleClick(val: string) {
     // const checkCard: Card = number.find((ele) => ele.id == id)
@@ -25,6 +20,13 @@ function Card(props: Props) {
     // setNumber(number.splice(ourCard, 1, checkCard))
     // console.log(number)
     setColor('white')
+    console.log(color)
+    if (firstCard.length == 0) {
+      setFirstCard(val)
+      //console.log('firstcard: ' + firstCard)
+    } else {
+      //call check if cards match
+    }
   }
 
   return (
@@ -33,6 +35,7 @@ function Card(props: Props) {
         key={props.val}
         className="p-button"
         onClick={() => {
+          console.log(color)
           handleClick(props.val)
         }}
         style={{ background: color }}

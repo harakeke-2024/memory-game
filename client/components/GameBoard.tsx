@@ -1,4 +1,6 @@
-import data from '../../data/Logic.ts'
+//import data from '../../data/Logic.ts'
+
+const allCards = ['one', 'two', 'three']
 
 import { Link } from 'react-router-dom'
 import Card from './Card'
@@ -8,12 +10,9 @@ import initialState from '../../data/gameLogic.ts'
 function GameBoard() {
   return (
     <div className="board">
-      <Card val="one" />
-      <Card val="two" />
-      <Card val="three" />
-      <Card val="two" />
-      <Card val="three" />
-      <Card val="one" />
+      {allCards.map((card) => (
+        <Card key={card} val={card} />
+      ))}
     </div>
   )
 }
