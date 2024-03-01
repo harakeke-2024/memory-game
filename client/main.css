@@ -36,3 +36,9 @@
   grid-template-columns: auto auto auto;
   flex-direction: row;
 }
+
+button {
+  margin-bottom: 50px;
+  margin-left: 25px;
+  height: 300px;
+}

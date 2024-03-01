@@ -3,15 +3,25 @@ import data from '../../data/Logic.ts'
 import { Link } from 'react-router-dom'
 import Card from './Card'
 import { useState } from 'react'
+import initialState from '../../data/gameLogic.ts'
 
-const row1 = ['2', '1', '3']
-const row2 = row1.toSorted()
+interface Card {
+  val: string
+  bool: boolean
+  id: string
+}
 
 function GameBoard() {
-  const [number, setNumber] = useState(false)
+  console.log(initialState)
+  const [number, setNumber] = useState(initialState)
+  const color = ['black', 'white']
 
-  function handleClick(number: number) {
-    setNumber(true)
+  function handleClick(id: string) {
+    const checkCard: Card = number.find((ele) => ele.id == id)
+    const ourCard = number.indexOf(checkCard)
+    checkCard.bool = true
+    setNumber(number.splice(ourCard, 1, checkCard))
+    console.log(number)
   }
 
   return (
@@ -19,20 +29,18 @@ function GameBoard() {
       <h3>React</h3>
       <p>Game Board</p>
       <div className="board">
-        {row1.map((number) => (
+        {number.map((card) => (
           <button
-            key={number}
+            key={card.id}
             className="p-button"
             onClick={() => {
-              handleClick(number)
+              handleClick(card.id)
             }}
+            style={
+              card.bool ? { background: color[1] } : { background: color[0] }
+            }
           >
-            {number}
-          </button>
-        ))}
-        {row2.map((number) => (
-          <button key={number} className="p-button">
-            {number}
+            {card.val}
           </button>
         ))}
       </div>
